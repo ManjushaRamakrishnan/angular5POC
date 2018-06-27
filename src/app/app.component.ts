@@ -13,11 +13,11 @@ export class AppComponent implements OnInit {
   discounts;
   constructor(private http: HttpClient) {}
   ngOnInit() {
-    // this.http.get('../assets/summary.json').subscribe((response) => {
-    //   this.summary = response;
-    // });
-    // this.http.get('../assets/discount.json').subscribe((response) => {
-    //   this.discounts = response;
-    // });
+    this.http.get('../assets/summary.json').subscribe((response) => {
+      this.summary = response;
+    });
+    this.http.get('../assets/discount.json').subscribe((response) => {
+      this.discounts = response;
+    });
   }
 }

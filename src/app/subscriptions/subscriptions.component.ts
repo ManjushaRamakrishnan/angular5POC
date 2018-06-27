@@ -31,7 +31,7 @@ export class SubscriptionsComponent implements OnInit, OnChanges {
       subscriberList: []
     };
   }
- 
+
   ngOnChanges() {
     if (this.summary) {
       this.subsciptions = this.summary ? this.summary['subList'] : [];
@@ -45,7 +45,7 @@ export class SubscriptionsComponent implements OnInit, OnChanges {
       this.badgeList.selectedCTN = this.badgeList.subscriberList[0].ctn;
     }
   }
- 
+
   /* Function to get required attributes from backend to subscriber list
   * @param subList : backend response value for subscriber list
   */
