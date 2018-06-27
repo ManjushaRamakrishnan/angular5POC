@@ -1,0 +1,63 @@
+<div class="subscription-outer-container">
+  <div class="head">
+    <div class="badge-text row">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 heading">
+        <i class="icon rui-icon-wireless planIcon"></i>
+        <span class="planName"> Share Everything 10GB Plan</span>
+      </div>
+      <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2 details options">
+        <span class="planUsage">
+          <a href=""> Voice, data and text usage details </a>
+          <i class="rui-icon-chevron-right"></i>
+        </span>
+      </div>
+      <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2 options">
+        <span class="planUsage">
+          <a href=""> Change Plan </a>
+          <i class="rui-icon-chevron-right"></i>
+        </span>
+      </div>
+      <div class="col-xs-12 col-sm-3 col-md-2 pull-right">
+        <span class="totalAmount">
+          <span> Total <sup class="superscript">$</sup>290<sup class="superscript">.00</sup> </span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="individualBadgeContainer row">
+      <div *ngFor="let sl of badgeList.subscriberList; let i=index" class="col-xs-12 col-sm-4">
+        <div class="individualBadge" *ngIf="!sl.isLink"  [ngStyle]="{'border-left-color': sl.colorCode}">
+          <button class="slButton">
+            <!-- <div class="colorCode" [ngStyle]="{'background-color': sl.colorCode}">
+            </div> -->
+            <div class="badgeList-individualBadgeInfo">
+              {{sl.displayName}} {{sl.ctn | phone}}
+              <i class="star-icon" *ngIf="i===0"></i>
+              <div class="badge-icon">
+                <i class="rui-icon-chevron-right"></i>
+              </div>
+              <div class="primary-line">
+               <span class="premium-tab">Premium Tab</span>
+               <span class="upgrade"><a href="#">Upgrade</a>
+                  <i class="rui-icon-chevron-right"></i>
+              </span> 
+              
+              </div>
+              <!-- separator to be inserted -->
+              <div class = "data-charges-info">
+                <span class="device-balance"><sup>$</sup>{{sl.deviceBalance.slice(0,sl.deviceBalance.indexOf('.'))}}<sup>{{sl.deviceBalance.slice(sl.deviceBalance.indexOf('.'))}}</sup><span class="normal-text"> device balance</span></span>
+                <span class="monthly-charge"><sup>$</sup>{{sl.perMonthCharge.slice(0,sl.perMonthCharge.indexOf('.'))}}<sup>{{sl.perMonthCharge.slice(sl.perMonthCharge.indexOf('.'))}}</sup>
+                  <span class="normal-text">/mo</span>
+                  <div class="small-text">Incl. add-ons</div>
+                </span>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,207 @@
+$badge-main-color: #FFFFFF;
+$badge-hover-color: #FFFFFF;
+$badge-height: 104px;
+$red: #da291c;
+$link-color: #337ab7;
+// .myservicebadgeGroup-title {
+//   font-size: 24px;
+//   color: #da291c;
+//   font-weight: 600;
+//   padding-left: 4px;
+//   line-height: 14.4px;
+//   text-align: left;
+// }
+
+.subscription-outer-container {
+  border-top: 2px solid $red;
+  .head {
+    sup {
+      font-size: 14px;
+      top: -0.5em;
+    }
+    .badge-text {
+      height: 15%;
+      //font-size: 16px;
+      margin: 12px 15px;
+      .heading {
+        font-size: 25px;
+        line-height: 35px;
+        padding: 0;
+      }
+      // .details {
+      //   width: 20%;
+      // }
+      .options {
+        line-height: 35px;
+        padding: 0;
+        font-size: 15px;
+        &.details {
+          margin-right: 10px;
+          width: 21%;
+        }
+        //padding-top: 10px;
+      }
+      .planIcon {
+        font-size: 28px;
+        color: $red; // margin-left: 15px;
+      }
+      .planName, .totalAmount {
+        margin-left: 6px;
+        font-size: 25px;
+        line-height: 35px;
+      }
+      .planUsage {
+        a {
+          color: $link-color;
+          font-weight: 700;
+          text-decoration: none;
+        }
+        i {
+          color: $link-color;
+          font-size: 11px;
+        }
+      }
+      .totalAmount {
+        span {
+          color: black;
+          float: right;
+        }
+        sup {
+          @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            top: -0.7em;
+          }
+        }
+      }
+    }
+  }
+  .body {
+    font-size: 16px;
+    height: 100%;
+    //line-height: 16px;
+    padding-bottom: 5px;
+    sup {
+      font-size: 12px;
+      top: -0.3em;
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        top: -0.6em;
+      }
+    }
+    .normal-text {
+      font-size: 15px;
+      font-weight: 300;
+    }
+    .small-text {
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 14px;
+      text-align: right;
+    }
+  }
+  .individualBadgeContainer {
+    left: 0;
+    width: 100%; // height: 100%;
+    z-index: 5;
+    margin: 0;
+    padding-top: 15px; // box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .08);
+    .individualBadge {
+      border-left:10px solid;
+      position: relative;
+      width: auto;
+      height: 150px;
+      cursor: pointer;
+      //border-bottom: none;
+      margin-bottom: 20px;
+      padding: 15px;
+      .data-charges-info {
+          margin-top: 5px;
+      }
+      //box-shadow: 5px 5px lightgrey;
+      .slButton {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        padding: 0;
+        top: 0;
+        margin: 0;
+        z-index: 2;
+        background-color: white;
+        border: 2px solid #f2f2f2;
+        border-left: none;
+        box-shadow: 5px 5px #f2f2f2;
+        .badgeList-individualBadgeIcon {
+          position: absolute;
+          font-size: 33px;
+          left: 20px;
+          top: 40%;
+          height: 27px;
+          transform: translateY(-50%);
+          color: #da291c;
+          &::before {
+            content: '\e82c';
+          }
+        }
+        .badgeList-individualBadgeInfo {
+          font-weight: 500;
+          font-size: 18px;
+          position: absolute;
+          transform: translateY(-50%);
+          text-align: left;
+          width: 100%;
+          padding: 25px 15px 10px;
+          .star-icon {
+            color: #f9bd41;
+            font-size: 24px;
+            &:before {
+              content: "\2605";
+            }  
+          }
+          span {
+            line-height: 28px;
+          }
+          .primary-line {
+            border-bottom: 2px dotted #e5e5e5;
+            font-weight: initial;
+            padding-bottom: 5px;
+            span {
+              font-size: 15px;
+            }
+            .upgrade {
+              font-weight: 700;
+              i {
+                color: $link-color;
+                font-size: 11px;
+              }
+            }
+          }
+          .monthly-charge {
+            float: right;
+          }
+        }
+        .individualBadgeInfoLink {
+          left: 52px;
+        }
+        .badge-icon {
+          float: right;
+          margin-top: 10px;
+          margin-right: 12px;
+          i {
+            font-size: 22px;
+          }
+        }
+        .badgeList-individualBadgeArrow {
+          position: absolute;
+          font-size: 22px;
+          color: #efefef;
+          top: 35%;
+          transform: translateY(-50%);
+          right: 8px;
+          height: 19px;
+          &::before {
+            content: '\e663';
+          }
+        }
+      }
+    }
+  }
+}

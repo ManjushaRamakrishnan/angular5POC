@@ -1,0 +1,1399 @@
+@font-face {
+    font-family: 'rui-icon';
+    font-style: normal;
+    font-weight: normal;
+    src:  url('../assets/icons/rui-icons/rui-icon.eot?dcwy0t');
+    src:  url('../assets/icons/rui-icons/rui-icon.eot?dcwy0t#iefix') format('embedded-opentype'),
+          url('../assets/icons/rui-icons/rui-icon.ttf?dcwy0t') format('truetype'),
+          url('../assets/icons/rui-icons/rui-icon.woff?dcwy0t') format('woff'),
+          url('../assets/icons/rui-icons/rui-icon.svg?dcwy0t#rui-icon') format('svg');
+  }
+   
+  i {
+    font-family: 'rui-icon' !important; /* use !important to prevent issues with browser extensions that change fonts */
+    /* speak: none; */
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+   
+  .rui-icon-circle-left:before {
+    content: "\e990";
+  }
+  .rui-icon-circle-right:before {
+    content: "\e991";
+  }
+  .rui-icon-circle-up:before {
+    content: "\e9cf";
+  }
+  .rui-icon-circle-down:before {
+    content: "\e981";
+  }
+  .rui-icon-triangle-arrow-left:before {
+    content: "\ea6a";
+  }
+  .rui-icon-triangle-arrow-right:before {
+    content: "\ea79";
+  }
+  .rui-icon-chevron-up-solid:before {
+    content: "\e962";
+  }
+  .rui-icon-arrow-left:before {
+    content: "\e81b";
+  }
+  .rui-icon-arrow-right:before {
+    content: "\e800";
+  }
+  .rui-icon-arrow-up:before {
+    content: "\e81c";
+  }
+  .rui-icon-arrow-down:before {
+    content: "\e81d";
+  }
+  .rui-icon-arrow-left-v2:before {
+    content: "\e93a";
+  }
+  .rui-icon-chevron-right:before {
+    content: "\e961";
+  }
+  .rui-icon-chevron:before {
+    content: "\e826";
+  }
+  .rui-icon-chevron-up:before {
+    content: "\e971";
+  }
+  .rui-icon-chevron-down:before {
+    content: "\e846";
+  }
+  .rui-icon-tick:before {
+    content: "\ea69";
+  }
+  .rui-icon-button-left:before {
+    content: "\e80a";
+  }
+  .rui-icon-button-right:before {
+    content: "\e80b";
+  }
+  .rui-icon-carousel-left:before {
+    content: "\e845";
+  }
+  .rui-icon-carousel-right:before {
+    content: "\e844";
+  }
+  .rui-icon-arrows:before {
+    content: "\e90b";
+  }
+  .rui-icon-skip:before {
+    content: "\ea00";
+  }
+  .rui-icon-flip-left:before {
+    content: "\e856";
+  }
+  .rui-icon-flip-right:before {
+    content: "\e85c";
+  }
+  .rui-icon-radio-off:before {
+    content: "\e84f";
+  }
+  .rui-icon-radio-on:before {
+    content: "\e850";
+  }
+  .rui-icon-circle-solid:before {
+    content: "\e9b1";
+  }
+  .rui-icon-play:before {
+    content: "\e860";
+  }
+  .rui-icon-checkbox-off:before {
+    content: "\e909";
+  }
+  .rui-icon-circle-checkbox-on:before {
+    content: "\e907";
+  }
+  .rui-icon-circle-solid-plus:before {
+    content: "\e928";
+  }
+  .rui-icon-more:before {
+    content: "\e927";
+  }
+  .rui-icon-plus:before {
+    content: "\e801";
+  }
+  .rui-icon-check:before {
+    content: "\e903";
+  }
+  .rui-icon-check-v2:before {
+    content: "\e941";
+  }
+  .rui-icon-circle-solid-check:before {
+    content: "\e992";
+  }
+  .rui-icon-success:before {
+    content: "\e836";
+  }
+  .rui-icon-check-circle:before {
+    content: "\e902";
+  }
+  .rui-icon-info-v2:before {
+    content: "\e905";
+  }
+  .rui-icon-info:before {
+    content: "\e837";
+  }
+  .rui-icon-error:before {
+    content: "\e835";
+  }
+  .rui-icon-alert-i:before {
+    content: "\e900";
+  }
+  .rui-icon-error-v2:before {
+    content: "\e904";
+  }
+  .rui-icon-high-voltage:before {
+    content: "\e9a3";
+  }
+  .rui-icon-question:before {
+    content: "\e85b";
+  }
+  .rui-icon-minus:before {
+    content: "\e816";
+  }
+  .rui-icon-circle-solid-minus:before {
+    content: "\e921";
+  }
+  .rui-icon-default-a:before {
+    content: "\e9cb";
+  }
+  .rui-icon-mobile-menu-exit:before {
+    content: "\ea44";
+  }
+  .rui-icon-circle-x:before {
+    content: "\e9c2";
+  }
+  .rui-icon-search-v3:before {
+    content: "\e94d";
+  }
+  .rui-icon-search-v2:before {
+    content: "\eaac";
+  }
+  .rui-icon-search:before {
+    content: "\e802";
+  }
+  .rui-icon-cloud-portal-visibility:before {
+    content: "\e9cc";
+  }
+  .rui-icon-focussing-on-customer:before {
+    content: "\e970";
+  }
+  .rui-icon-techxpert-whole-home:before {
+    content: "\e9e9";
+  }
+  .rui-icon-guide-channel:before {
+    content: "\e9cd";
+  }
+  .rui-icon-look-closer:before {
+    content: "\e923";
+  }
+  .rui-icon-review:before {
+    content: "\e92d";
+  }
+  .rui-icon-guide:before {
+    content: "\ea01";
+  }
+  .rui-icon-locator-v2:before {
+    content: "\e908";
+  }
+  .rui-icon-locator:before {
+    content: "\e814";
+  }
+  .rui-icon-menu:before {
+    content: "\e82d";
+  }
+  .rui-icon-mobile-menu-v2:before {
+    content: "\ea53";
+  }
+  .rui-icon-more-info:before {
+    content: "\e843";
+  }
+  .rui-icon-software:before {
+    content: "\e85a";
+  }
+  .rui-icon-online:before {
+    content: "\e818";
+  }
+  .rui-icon-arrow:before {
+    content: "\e9c8";
+  }
+  .rui-icon-generic-reduce:before {
+    content: "\e955";
+  }
+  .rui-icon-streak-challenge:before {
+    content: "\ea02";
+  }
+  .rui-icon-drive-growth-in-business-segment:before {
+    content: "\e96d";
+  }
+  .rui-icon-innovation-v2:before {
+    content: "\e97a";
+  }
+  .rui-icon-flexibility:before {
+    content: "\e949";
+  }
+  .rui-icon-innovation-v3:before {
+    content: "\e97b";
+  }
+  .rui-icon-growth-bar:before {
+    content: "\e94a";
+  }
+  .rui-icon-data-mgmt-icon:before {
+    content: "\e938";
+  }
+  .rui-icon-choice:before {
+    content: "\e96a";
+  }
+  .rui-icon-update:before {
+    content: "\e95f";
+  }
+  .rui-icon-link:before {
+    content: "\e90c";
+  }
+  .rui-icon-share:before {
+    content: "\e906";
+  }
+  .rui-icon-myrogers:before {
+    content: "\e840";
+  }
+  .rui-icon-logo:before {
+    content: "\e84b";
+  }
+  .rui-icon-go-to-market-as-one-rogers:before {
+    content: "\e973";
+  }
+  .rui-icon-user-v2:before {
+    content: "\eaa7";
+  }
+  .rui-icon-accountability:before {
+    content: "\e964";
+  }
+  .rui-icon-user:before {
+    content: "\e804";
+  }
+  .rui-icon-person-edit:before {
+    content: "\e83b";
+  }
+  .rui-icon-digital-contact-us:before {
+    content: "\e901";
+  }
+  .rui-icon-person-call-v2:before {
+    content: "\e90a";
+  }
+  .rui-icon-person-call:before {
+    content: "\e83d";
+  }
+  .rui-icon-schedule-call:before {
+    content: "\e851";
+  }
+  .rui-icon-steady-traditional:before {
+    content: "\ea03";
+  }
+  .rui-icon-person-chat:before {
+    content: "\e83c";
+  }
+  .rui-icon-serve:before {
+    content: "\e85e";
+  }
+  .rui-icon-support-centre:before {
+    content: "\e9b3";
+  }
+  .rui-icon-skip-wait:before {
+    content: "\e864";
+  }
+  .rui-icon-integrated-onboarding:before {
+    content: "\e97d";
+  }
+  .rui-icon-investing-and-developping-our-people:before {
+    content: "\e97f";
+  }
+  .rui-icon-onboarding-lite:before {
+    content: "\e987";
+  }
+  .rui-icon-follow-a-player:before {
+    content: "\ea04";
+  }
+  .rui-icon-technical-room:before {
+    content: "\e9b4";
+  }
+  .rui-icon-substitute-seeker:before {
+    content: "\ea05";
+  }
+  .rui-icon-orci-program:before {
+    content: "\ea06";
+  }
+  .rui-icon-invest-in-and-develop-our-people:before {
+    content: "\e97e";
+  }
+  .rui-icon-people:before {
+    content: "\e81a";
+  }
+  .rui-icon-community-forums:before {
+    content: "\e853";
+  }
+  .rui-icon-social:before {
+    content: "\e825";
+  }
+  .rui-icon-social-media-b:before {
+    content: "\e9ce";
+  }
+  .rui-icon-connect-v2:before {
+    content: "\e943";
+  }
+  .rui-icon-reorganization:before {
+    content: "\e98d";
+  }
+  .rui-icon-re-security:before {
+    content: "\e9ae";
+  }
+  .rui-icon-access-and-identity:before {
+    content: "\e9b9";
+  }
+  .rui-icon-photo-gallery:before {
+    content: "\ea07";
+  }
+  .rui-icon-passcard:before {
+    content: "\e9ea";
+  }
+  .rui-icon-customer-service:before {
+    content: "\e944";
+  }
+  .rui-icon-call:before {
+    content: "\e80c";
+  }
+  .rui-icon-phonea-not-service-related:before {
+    content: "\e951";
+  }
+  .rui-icon-call-displsay-icon:before {
+    content: "\e942";
+  }
+  .rui-icon-call-fwd-icon:before {
+    content: "\e94b";
+  }
+  .rui-icon-call-waiting-icon:before {
+    content: "\e93e";
+  }
+  .rui-icon-contact-us:before {
+    content: "\e854";
+  }
+  .rui-icon-tty:before {
+    content: "\e986";
+  }
+  .rui-icon-phone:before {
+    content: "\e90d";
+  }
+  .rui-icon-sim-card-v2:before {
+    content: "\e924";
+  }
+  .rui-icon-sim-card:before {
+    content: "\e832";
+  }
+  .rui-icon-record:before {
+    content: "\e841";
+  }
+  .rui-icon-old-phone:before {
+    content: "\ea08";
+  }
+  .rui-icon-wireless-homephone:before {
+    content: "\e9eb";
+  }
+  .rui-icon-home-phone:before {
+    content: "\e810";
+  }
+  .rui-icon-wireless:before {
+    content: "\e82c";
+  }
+  .rui-icon-mobile-internet-wave:before {
+    content: "\e9d0";
+  }
+  .rui-icon-add-phone:before {
+    content: "\e82f";
+  }
+  .rui-icon-multiple-devices-v2:before {
+    content: "\e945";
+  }
+  .rui-icon-device-search:before {
+    content: "\e9ec";
+  }
+  .rui-icon-generic-smart-picks:before {
+    content: "\e958";
+  }
+  .rui-icon-phone-arrow:before {
+    content: "\e865";
+  }
+  .rui-icon-deliver-compelling-content-everywhere:before {
+    content: "\e96b";
+  }
+  .rui-icon-unified-communications:before {
+    content: "\e9bd";
+  }
+  .rui-icon-basic-phone:before {
+    content: "\e93b";
+  }
+  .rui-icon-bring-your-own-device:before {
+    content: "\e93d";
+  }
+  .rui-icon-no-use-of-phone:before {
+    content: "\e9ac";
+  }
+  .rui-icon-generic-security:before {
+    content: "\e957";
+  }
+  .rui-icon-device-protection:before {
+    content: "\e80f";
+  }
+  .rui-icon-mobile-security:before {
+    content: "\e925";
+  }
+  .rui-icon-device-aid:before {
+    content: "\e866";
+  }
+  .rui-icon-phoneb-not-service-related:before {
+    content: "\e952";
+  }
+  .rui-icon-connect:before {
+    content: "\e917";
+  }
+  .rui-icon-tablet:before {
+    content: "\e95b";
+  }
+  .rui-icon-devices:before {
+    content: "\e83a";
+  }
+  .rui-icon-multiple-devices:before {
+    content: "\e929";
+  }
+  .rui-icon-multiple-devices-v3:before {
+    content: "\e9c9";
+  }
+  .rui-icon-tv-v2:before {
+    content: "\ea88";
+  }
+  .rui-icon-tv:before {
+    content: "\e803";
+  }
+  .rui-icon-live-stream:before {
+    content: "\ea09";
+  }
+  .rui-icon-anyplace-tv:before {
+    content: "\e916";
+  }
+  .rui-icon-desktop:before {
+    content: "\e9ed";
+  }
+  .rui-icon-internet-v2:before {
+    content: "\e90f";
+  }
+  .rui-icon-internet:before {
+    content: "\e812";
+  }
+  .rui-icon-member-website:before {
+    content: "\e985";
+  }
+  .rui-icon-volunteer-community-tv:before {
+    content: "\ea0a";
+  }
+  .rui-icon-disability-management:before {
+    content: "\ea0b";
+  }
+  .rui-icon-network-connectivity:before {
+    content: "\e922";
+  }
+  .rui-icon-monitor:before {
+    content: "\e82b";
+  }
+  .rui-icon-entertainment-first:before {
+    content: "\ea0e";
+  }
+  .rui-icon-remote-control:before {
+    content: "\e833";
+  }
+  .rui-icon-security:before {
+    content: "\e84c";
+  }
+  .rui-icon-generic-radio:before {
+    content: "\e954";
+  }
+  .rui-icon-wireless-access-point:before {
+    content: "\e9d1";
+  }
+  .rui-icon-blocking-wireless-gateway:before {
+    content: "\e9ee";
+  }
+  .rui-icon-moderm:before {
+    content: "\e9d2";
+  }
+  .rui-icon-moderm-adaptor:before {
+    content: "\e9d3";
+  }
+  .rui-icon-modem:before {
+    content: "\e910";
+  }
+  .rui-icon-wi-fi-calling:before {
+    content: "\e937";
+  }
+  .rui-icon-wifi:before {
+    content: "\e806";
+  }
+  .rui-icon-interference:before {
+    content: "\e9ef";
+  }
+  .rui-icon-g-frequency:before {
+    content: "\e9f0";
+  }
+  .rui-icon-low-signal:before {
+    content: "\e9f1";
+  }
+  .rui-icon-hr101:before {
+    content: "\e978";
+  }
+  .rui-icon-door-wall:before {
+    content: "\e9f2";
+  }
+  .rui-icon-involuntary-termination:before {
+    content: "\e980";
+  }
+  .rui-icon-history:before {
+    content: "\e977";
+  }
+  .rui-icon-generic-publishing:before {
+    content: "\e953";
+  }
+  .rui-icon-newspaper-magazine:before {
+    content: "\ea0f";
+  }
+  .rui-icon-taking-notes:before {
+    content: "\e994";
+  }
+  .rui-icon-network-inventory-management-nim:before {
+    content: "\e9d4";
+  }
+  .rui-icon-operational-essentials:before {
+    content: "\e988";
+  }
+  .rui-icon-agenda:before {
+    content: "\e965";
+  }
+  .rui-icon-facts:before {
+    content: "\e947";
+  }
+  .rui-icon-list-v2:before {
+    content: "\e90e";
+  }
+  .rui-icon-paper:before {
+    content: "\e911";
+  }
+  .rui-icon-wax-paper:before {
+    content: "\ea10";
+  }
+  .rui-icon-non-confidential-paper:before {
+    content: "\ea11";
+  }
+  .rui-icon-file:before {
+    content: "\e819";
+  }
+  .rui-icon-paper-form-info:before {
+    content: "\e85f";
+  }
+  .rui-icon-default-b:before {
+    content: "\e9d5";
+  }
+  .rui-icon-add:before {
+    content: "\e914";
+  }
+  .rui-icon-file-encryption:before {
+    content: "\e9f3";
+  }
+  .rui-icon-pdf:before {
+    content: "\e912";
+  }
+  .rui-icon-zip:before {
+    content: "\e9f4";
+  }
+  .rui-icon-total-rewards-statement:before {
+    content: "\ea12";
+  }
+  .rui-icon-letter-of-resignation:before {
+    content: "\e984";
+  }
+  .rui-icon-live-chat:before {
+    content: "\e813";
+  }
+  .rui-icon-livechat-v2:before {
+    content: "\ea41";
+  }
+  .rui-icon-add-text:before {
+    content: "\e830";
+  }
+  .rui-icon-msg-share-feedback:before {
+    content: "\e94f";
+  }
+  .rui-icon-email-v2:before {
+    content: "\ea0d";
+  }
+  .rui-icon-mail:before {
+    content: "\e805";
+  }
+  .rui-icon-comment-question:before {
+    content: "\e852";
+  }
+  .rui-icon-mms:before {
+    content: "\e926";
+  }
+  .rui-icon-generic-message:before {
+    content: "\e94e";
+  }
+  .rui-icon-social-media-a:before {
+    content: "\e9d6";
+  }
+  .rui-icon-text-alerts:before {
+    content: "\e95c";
+  }
+  .rui-icon-social-hub:before {
+    content: "\e932";
+  }
+  .rui-icon-number:before {
+    content: "\e913";
+  }
+  .rui-icon-chat-email-bubble:before {
+    content: "\e9ba";
+  }
+  .rui-icon-redboard:before {
+    content: "\e824";
+  }
+  .rui-icon-facebook-msg:before {
+    content: "\e855";
+  }
+  .rui-icon-lock-small:before {
+    content: "\e807";
+  }
+  .rui-icon-lock:before {
+    content: "\e815";
+  }
+  .rui-icon-lock-v2:before {
+    content: "\e85d";
+  }
+  .rui-icon-lock-alt:before {
+    content: "\e84a";
+  }
+  .rui-icon-closed-lock-rounded:before {
+    content: "\e9be";
+  }
+  .rui-icon-facebook:before {
+    content: "\e821";
+  }
+  .rui-icon-facebook-v2:before {
+    content: "\eaa9";
+  }
+  .rui-icon-twitter-alt:before {
+    content: "\e848";
+  }
+  .rui-icon-twitter-v2:before {
+    content: "\eaad";
+  }
+  .rui-icon-twitter:before {
+    content: "\e81e";
+  }
+  .rui-icon-googleplus:before {
+    content: "\eaaa";
+  }
+  .rui-icon-google:before {
+    content: "\eaaf";
+  }
+  .rui-icon-gplus:before {
+    content: "\e820";
+  }
+  .rui-icon-youtube:before {
+    content: "\e842";
+  }
+  .rui-icon-youtube-v2:before {
+    content: "\eaae";
+  }
+  .rui-icon-linkedin:before {
+    content: "\e849";
+  }
+  .rui-icon-instagram-v2:before {
+    content: "\eaab";
+  }
+  .rui-icon-instagram:before {
+    content: "\e827";
+  }
+  .rui-icon-lg:before {
+    content: "\e9c3";
+  }
+  .rui-icon-samsung-s:before {
+    content: "\e9c4";
+  }
+  .rui-icon-os-apple:before {
+    content: "\e823";
+  }
+  .rui-icon-os-windows:before {
+    content: "\e81f";
+  }
+  .rui-icon-os-android:before {
+    content: "\e822";
+  }
+  .rui-icon-os-blackberry:before {
+    content: "\e82e";
+  }
+  .rui-icon-cart:before {
+    content: "\e80e";
+  }
+  .rui-icon-cart-v2:before {
+    content: "\e940";
+  }
+  .rui-icon-conveniece-store:before {
+    content: "\e99d";
+  }
+  .rui-icon-shopping-bag:before {
+    content: "\e915";
+  }
+  .rui-icon-as-a-service:before {
+    content: "\e9c0";
+  }
+  .rui-icon-briefcase:before {
+    content: "\e829";
+  }
+  .rui-icon-health-insurance:before {
+    content: "\e976";
+  }
+  .rui-icon-health-spending-account:before {
+    content: "\ea13";
+  }
+  .rui-icon-delivery:before {
+    content: "\e83e";
+  }
+  .rui-icon-moving:before {
+    content: "\e857";
+  }
+  .rui-icon-smarter-ways-to-work-and-win:before {
+    content: "\e993";
+  }
+  .rui-icon-resources-services:before {
+    content: "\e9bf";
+  }
+  .rui-icon-home-tree:before {
+    content: "\e9ca";
+  }
+  .rui-icon-home-monitoring-v2:before {
+    content: "\e918";
+  }
+  .rui-icon-home-security:before {
+    content: "\e811";
+  }
+  .rui-icon-home:before {
+    content: "\ea2f";
+  }
+  .rui-icon-lock-home:before {
+    content: "\e862";
+  }
+  .rui-icon-home-automation-A:before {
+    content: "\e9d7";
+  }
+  .rui-icon-completely-connected:before {
+    content: "\ea14";
+  }
+  .rui-icon-residential-service:before {
+    content: "\e9d8";
+  }
+  .rui-icon-orci-household:before {
+    content: "\ea15";
+  }
+  .rui-icon-customize:before {
+    content: "\e861";
+  }
+  .rui-icon-temperature-weather:before {
+    content: "\e936";
+  }
+  .rui-icon-automation:before {
+    content: "\e808";
+  }
+  .rui-icon-schedule:before {
+    content: "\ea16";
+  }
+  .rui-icon-calendar:before {
+    content: "\e834";
+  }
+  .rui-icon-calendar-v2:before {
+    content: "\e84e";
+  }
+  .rui-icon-calendar-v3:before {
+    content: "\e93f";
+  }
+  .rui-icon-connection-speed:before {
+    content: "\e9f5";
+  }
+  .rui-icon-fast-speedometer:before {
+    content: "\e9c5";
+  }
+  .rui-icon-medium-speedometer:before {
+    content: "\e9c6";
+  }
+  .rui-icon-slow-speedometer:before {
+    content: "\e9c7";
+  }
+  .rui-icon-kick-off:before {
+    content: "\e982";
+  }
+  .rui-icon-explore:before {
+    content: "\e946";
+  }
+  .rui-icon-world:before {
+    content: "\e828";
+  }
+  .rui-icon-generic-travel:before {
+    content: "\e95e";
+  }
+  .rui-icon-globe:before {
+    content: "\ea1e";
+  }
+  .rui-icon-north-america:before {
+    content: "\e817";
+  }
+  .rui-icon-north-america-v2:before {
+    content: "\e847";
+  }
+  .rui-icon-north-america-v3:before {
+    content: "\e950";
+  }
+  .rui-icon-modes:before {
+    content: "\e9d9";
+  }
+  .rui-icon-grid:before {
+    content: "\e919";
+  }
+  .rui-icon-bundles:before {
+    content: "\e809";
+  }
+  .rui-icon-regedit:before {
+    content: "\e9f6";
+  }
+  .rui-icon-services:before {
+    content: "\e84d";
+  }
+  .rui-icon-system:before {
+    content: "\e9da";
+  }
+  .rui-icon-settings:before {
+    content: "\e858";
+  }
+  .rui-icon-rogers-way-selling:before {
+    content: "\ea17";
+  }
+  .rui-icon-delete-cleanup:before {
+    content: "\e91b";
+  }
+  .rui-icon-megaphone:before {
+    content: "\e82a";
+  }
+  .rui-icon-announcement_share_present:before {
+    content: "\e91a";
+  }
+  .rui-icon-creditcard-pay-debit:before {
+    content: "\e91c";
+  }
+  .rui-icon-safepay-browser:before {
+    content: "\e9f7";
+  }
+  .rui-icon-re-atm:before {
+    content: "\e99a";
+  }
+  .rui-icon-dollar:before {
+    content: "\e83f";
+  }
+  .rui-icon-invest-pay-price:before {
+    content: "\e920";
+  }
+  .rui-icon-invest:before {
+    content: "\e94c";
+  }
+  .rui-icon-wealth-accumulation-programs:before {
+    content: "\e999";
+  }
+  .rui-icon-financial:before {
+    content: "\e948";
+  }
+  .rui-icon-aquarium-channel:before {
+    content: "\e9db";
+  }
+  .rui-icon-moments:before {
+    content: "\e92a";
+  }
+  .rui-icon-camera:before {
+    content: "\e80d";
+  }
+  .rui-icon-hub-to-camera-wirelessly:before {
+    content: "\e9dc";
+  }
+  .rui-icon-hub-to-camera:before {
+    content: "\e9dd";
+  }
+  .rui-icon-shm-hub:before {
+    content: "\e9de";
+  }
+  .rui-icon-entertainment:before {
+    content: "\e91d";
+  }
+  .rui-icon-command-prompt:before {
+    content: "\e9f8";
+  }
+  .rui-icon-notepad-plus:before {
+    content: "\e9f9";
+  }
+  .rui-icon-save:before {
+    content: "\e839";
+  }
+  .rui-icon-save-a:before {
+    content: "\e92e";
+  }
+  .rui-icon-adaptor:before {
+    content: "\e9df";
+  }
+  .rui-icon-usb:before {
+    content: "\e859";
+  }
+  .rui-icon-dvd:before {
+    content: "\ea18";
+  }
+  .rui-icon-mice:before {
+    content: "\ea19";
+  }
+  .rui-icon-keyboard:before {
+    content: "\ea1a";
+  }
+  .rui-icon-computer-peripherals:before {
+    content: "\ea1b";
+  }
+  .rui-icon-battery:before {
+    content: "\ea1c";
+  }
+  .rui-icon-music:before {
+    content: "\e92b";
+  }
+  .rui-icon-speaker:before {
+    content: "\e9fa";
+  }
+  .rui-icon-ssshhh:before {
+    content: "\e9b2";
+  }
+  .rui-icon-games:before {
+    content: "\e91e";
+  }
+  .rui-icon-rogers-cup-today:before {
+    content: "\ea1d";
+  }
+  .rui-icon-fan-challenge:before {
+    content: "\ea1f";
+  }
+  .rui-icon-sports:before {
+    content: "\e933";
+  }
+  .rui-icon-sports-v2:before {
+    content: "\e934";
+  }
+  .rui-icon-sports-v3:before {
+    content: "\e935";
+  }
+  .rui-icon-bike-storage:before {
+    content: "\e99b";
+  }
+  .rui-icon-fitness-gym:before {
+    content: "\e9a2";
+  }
+  .rui-icon-player-male:before {
+    content: "\ea20";
+  }
+  .rui-icon-player-female:before {
+    content: "\ea21";
+  }
+  .rui-icon-fitbit:before {
+    content: "\e9fb";
+  }
+  .rui-icon-tickets:before {
+    content: "\ea22";
+  }
+  .rui-icon-score:before {
+    content: "\ea23";
+  }
+  .rui-icon-inspiring-confidence:before {
+    content: "\e97c";
+  }
+  .rui-icon-bookmark:before {
+    content: "\e9fc";
+  }
+  .rui-icon-rogers-advantage:before {
+    content: "\e996";
+  }
+  .rui-icon-recognition:before {
+    content: "\e98c";
+  }
+  .rui-icon-win-medal:before {
+    content: "\e939";
+  }
+  .rui-icon-award:before {
+    content: "\e831";
+  }
+  .rui-icon-strong-canadian-growth-company:before {
+    content: "\e93c";
+  }
+  .rui-icon-strong-canadian-growth-company-v2:before {
+    content: "\e967";
+  }
+  .rui-icon-get-updates:before {
+    content: "\e91f";
+  }
+  .rui-icon-network:before {
+    content: "\e863";
+  }
+  .rui-icon-erase-white-board:before {
+    content: "\e9a1";
+  }
+  .rui-icon-writable-surface:before {
+    content: "\e9b6";
+  }
+  .rui-icon-non-writable-surface:before {
+    content: "\e9ab";
+  }
+  .rui-icon-edit:before {
+    content: "\ea0c";
+  }
+  .rui-icon-hardware:before {
+    content: "\e9bc";
+  }
+  .rui-icon-project-storage-archive:before {
+    content: "\e9ad";
+  }
+  .rui-icon-individual-storage:before {
+    content: "\ea24";
+  }
+  .rui-icon-lockers:before {
+    content: "\e9a8";
+  }
+  .rui-icon-lan-room:before {
+    content: "\e9a6";
+  }
+  .rui-icon-lan-switches:before {
+    content: "\e9e0";
+  }
+  .rui-icon-centralized-storage-archive:before {
+    content: "\e99c";
+  }
+  .rui-icon-firewall:before {
+    content: "\e9e1";
+  }
+  .rui-icon-fireplace-channel:before {
+    content: "\e9e2";
+  }
+  .rui-icon-fax:before {
+    content: "\e9e3";
+  }
+  .rui-icon-copy-point:before {
+    content: "\e99e";
+  }
+  .rui-icon-print-v2:before {
+    content: "\ea54";
+  }
+  .rui-icon-print:before {
+    content: "\e838";
+  }
+  .rui-icon-smiley-face-double:before {
+    content: "\e959";
+  }
+  .rui-icon-smiley-face-single:before {
+    content: "\e95a";
+  }
+  .rui-icon-overhaul-the-customer-experience:before {
+    content: "\e989";
+  }
+  .rui-icon-fan-zone:before {
+    content: "\ea25";
+  }
+  .rui-icon-woman-washroom:before {
+    content: "\e9b5";
+  }
+  .rui-icon-men-washroom:before {
+    content: "\e9a9";
+  }
+  .rui-icon-parental-control:before {
+    content: "\e9fd";
+  }
+  .rui-icon-parental-benefits:before {
+    content: "\ea26";
+  }
+  .rui-icon-polycom:before {
+    content: "\ea27";
+  }
+  .rui-icon-physical:before {
+    content: "\e983";
+  }
+  .rui-icon-disabled-toilet-handicap:before {
+    content: "\e99f";
+  }
+  .rui-icon-spiritual-room:before {
+    content: "\e9b0";
+  }
+  .rui-icon-paramedical:before {
+    content: "\e98a";
+  }
+  .rui-icon-baby-monitor:before {
+    content: "\e9fe";
+  }
+  .rui-icon-employee-and-family-assistance:before {
+    content: "\e96e";
+  }
+  .rui-icon-hearing:before {
+    content: "\e979";
+  }
+  .rui-icon-generic-thumbsup:before {
+    content: "\e95d";
+  }
+  .rui-icon-volunteer:before {
+    content: "\ea28";
+  }
+  .rui-icon-rubber:before {
+    content: "\ea29";
+  }
+  .rui-icon-sponsors:before {
+    content: "\ea2a";
+  }
+  .rui-icon-no-entry:before {
+    content: "\e9aa";
+  }
+  .rui-icon-vision:before {
+    content: "\e9a7";
+  }
+  .rui-icon-vision-care:before {
+    content: "\e998";
+  }
+  .rui-icon-prescription-drug-plan:before {
+    content: "\e98b";
+  }
+  .rui-icon-stethoscope:before {
+    content: "\ea68";
+  }
+  .rui-icon-dental-benefits:before {
+    content: "\e96c";
+  }
+  .rui-icon-showers:before {
+    content: "\e9af";
+  }
+  .rui-icon-kitchen:before {
+    content: "\e9a5";
+  }
+  .rui-icon-kitchen-A:before {
+    content: "\ea2b";
+  }
+  .rui-icon-microwave:before {
+    content: "\e9ff";
+  }
+  .rui-icon-hub-coffee-corner:before {
+    content: "\e9a4";
+  }
+  .rui-icon-be-well:before {
+    content: "\e969";
+  }
+  .rui-icon-anchor-segamentation:before {
+    content: "\ea2c";
+  }
+  .rui-icon-pizza-box:before {
+    content: "\ea2d";
+  }
+  .rui-icon-wood-stir-sticks:before {
+    content: "\ea30";
+  }
+  .rui-icon-bread-pasta-rice:before {
+    content: "\ea31";
+  }
+  .rui-icon-candy-chip-wrapper:before {
+    content: "\ea32";
+  }
+  .rui-icon-biodegradable:before {
+    content: "\ea33";
+  }
+  .rui-icon-plastic-clamshell:before {
+    content: "\ea34";
+  }
+  .rui-icon-styroform:before {
+    content: "\ea35";
+  }
+  .rui-icon-plastic-tubs-lids:before {
+    content: "\ea36";
+  }
+  .rui-icon-steal-cans:before {
+    content: "\ea37";
+  }
+  .rui-icon-food-scraps:before {
+    content: "\e9b7";
+  }
+  .rui-icon-plastic-bottles:before {
+    content: "\e9b8";
+  }
+  .rui-icon-bottle-can:before {
+    content: "\ea38";
+  }
+  .rui-icon-coffee-cup-lid:before {
+    content: "\ea39";
+  }
+  .rui-icon-egg-drink-holders:before {
+    content: "\ea3a";
+  }
+  .rui-icon-coffee-grouding-tea-bag:before {
+    content: "\ea3b";
+  }
+  .rui-icon-milk-cartons:before {
+    content: "\ea3c";
+  }
+  .rui-icon-tetra-packs:before {
+    content: "\ea3d";
+  }
+  .rui-icon-condiment-package:before {
+    content: "\ea3e";
+  }
+  .rui-icon-boxboard:before {
+    content: "\ea3f";
+  }
+  .rui-icon-corrugated-cardboard:before {
+    content: "\ea40";
+  }
+  .rui-icon-plastic-jugs-buckets:before {
+    content: "\ea42";
+  }
+  .rui-icon-clean-plastic-bags:before {
+    content: "\ea43";
+  }
+  .rui-icon-carpet-textile:before {
+    content: "\ea45";
+  }
+  .rui-icon-foil-paper-wrapper:before {
+    content: "\ea46";
+  }
+  .rui-icon-kraft-papers:before {
+    content: "\ea47";
+  }
+  .rui-icon-tissue:before {
+    content: "\ea48";
+  }
+  .rui-icon-all-gerder-washroom:before {
+    content: "\ea49";
+  }
+  .rui-icon-graduation:before {
+    content: "\e974";
+  }
+  .rui-icon-focus-on-innovation-and-network-leadership:before {
+    content: "\e96f";
+  }
+  .rui-icon-retirement-A:before {
+    content: "\ea4a";
+  }
+  .rui-icon-rogers101:before {
+    content: "\e98f";
+  }
+  .rui-icon-plants-flowers:before {
+    content: "\ea4b";
+  }
+  .rui-icon-onboarding-wave:before {
+    content: "\ea4c";
+  }
+  .rui-icon-retirement:before {
+    content: "\e98e";
+  }
+  .rui-icon-db-plan:before {
+    content: "\ea4d";
+  }
+  .rui-icon-life-insurance:before {
+    content: "\ea4e";
+  }
+  .rui-icon-sunset-channel:before {
+    content: "\e9e4";
+  }
+  .rui-icon-just-essential:before {
+    content: "\ea4f";
+  }
+  .rui-icon-rocket:before {
+    content: "\e92c";
+  }
+  .rui-icon-star:before {
+    content: "\e92f";
+  }
+  .rui-icon-heart:before {
+    content: "\ea2e";
+  }
+  .rui-icon-about-understanding-who-we-are:before {
+    content: "\e963";
+  }
+  .rui-icon-groundbreaking:before {
+    content: "\e975";
+  }
+  .rui-icon-dry-cleaning:before {
+    content: "\e9a0";
+  }
+  .rui-icon-tshirt:before {
+    content: "\e997";
+  }
+  .rui-icon-team-work:before {
+    content: "\e995";
+  }
+  .rui-icon-attract:before {
+    content: "\e966";
+  }
+  .rui-icon-wall-plug:before {
+    content: "\e930";
+  }
+  .rui-icon-calculator:before {
+    content: "\e931";
+  }
+  .rui-icon-business-solutions:before {
+    content: "\e956";
+  }
+  .rui-icon-cloud-plus:before {
+    content: "\e9bb";
+  }
+  .rui-icon-cloud:before {
+    content: "\e960";
+  }
+  .rui-icon-data-center-cloud:before {
+    content: "\e9c1";
+  }
+  .rui-icon-secure-cloud:before {
+    content: "\e9e5";
+  }
+  .rui-icon-new-mainstream:before {
+    content: "\ea50";
+  }
+  .rui-icon-sharepoint-a:before {
+    content: "\e9e6";
+  }
+  .rui-icon-sharepoint-b:before {
+    content: "\e9e7";
+  }
+  .rui-icon-internet-of-things:before {
+    content: "\e968";
+  }
+  .rui-icon-bracket-challenge:before {
+    content: "\ea51";
+  }
+  .rui-icon-draw:before {
+    content: "\ea52";
+  }
+  .rui-icon-pvr:before {
+    content: "\e972";
+  }
+  .rui-icon-security-appliance:before {
+    content: "\e9e8";
+  }
+  .rui-icon-a-to-z:before {
+    content: "\ea55";
+  }
+   
