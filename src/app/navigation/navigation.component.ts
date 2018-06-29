@@ -16,14 +16,19 @@ export class NavigationComponent implements OnInit {
     let queryParams : string,
       queryList : Array<string>;
     queryParams = this.url.path().indexOf('?') ? this.url.path().split('?')[1] : "";
-    queryParams && ( queryParams = queryParams.indexOf('#') ? queryParams.split('#')[0] : queryParams );
-    queryParams && ( queryList = queryParams.indexOf('&') ? queryParams.split('&') : [queryParams] );
-    for ( queryParams in queryList ) {
-      let queryValue : Array<string>;
-      queryValue = queryList[queryParams].split('=');
-      console.log("Angular 5 Query string list >> " + queryValue);
-      this.cookieService.set( queryValue[0], queryValue[1]+"5" );
-    }
+    if (queryParams) {
+      queryParams && ( queryParams = queryParams.indexOf('#') ? queryParams.split('#')[0] : queryParams );
+      queryParams && ( queryList = queryParams.indexOf('&') ? queryParams.split('&') : [queryParams] );
+      for ( queryParams in queryList ) {
+        let queryValue : Array<string>;
+        queryValue = queryList[queryParams].split('=');
+        console.log("Angular 5 Query string list >> " + queryValue);
+        this.cookieService.set( queryValue[0], queryValue[1]+" 5" );
+      }
+    } else {
+      this.cookieService.set( "name", "Angular5" );
+      this.cookieService.set( "data", "Sample Data 5")
+    }  
   }
 
 }
