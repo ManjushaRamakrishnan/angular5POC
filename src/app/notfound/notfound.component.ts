@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { CookieService } from 'ngx-cookie-service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-notfound',
@@ -8,13 +9,10 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class NotfoundComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute, private router: Router) { }
+  constructor(private router: Router, private cookieService: CookieService) { }
 
   ngOnInit() {
-    console.log('yes');
-     window.location.href = `http://localhost:8000/#${this.router.url}`;
-    // console.log( `http://localhost:8000/#${this.router.url}`);
-
+     window.location.href = `http://localhost:8080/#${this.router.url}?` + ( this.cookieService.get( 'name' ) && "name=" + this.cookieService.get( 'name' ) ) + ( this.cookieService.get( 'data' ) && "&data=" + this.cookieService.get( 'data' ) );
   }
 
 }

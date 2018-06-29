@@ -6,8 +6,9 @@ import { OverviewComponent } from './overview/overview.component';
 
 const externalUrlProvider = new InjectionToken('externalUrlRedirectResolver');
 const routes: Routes = [
-  {path: '', pathMatch: 'full', redirectTo: 'overview'},
   {path: 'overview', component: OverviewComponent},
+  {path: 'overview?queryData', component: OverviewComponent},
+  {path: '', pathMatch: 'full', redirectTo: 'overview'},
   {path: '**', component: NotfoundComponent}
 ];
 
