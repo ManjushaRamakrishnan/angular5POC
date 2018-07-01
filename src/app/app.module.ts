@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CollapseModule } from 'ngx-bootstrap';
+import {CookieService} from 'ngx-cookie-service';
 
 
 import { AppComponent } from './app.component';
@@ -26,7 +27,7 @@ import { OverviewComponent } from './overview/overview.component';
    CollapseModule.forRoot(),
    AppRoutingModule
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
